@@ -1,0 +1,70 @@
+
+:root {
+    --grey-color: #5f6368;
+    --text-note: #E8E4CD;
+}
+
+.hidden {
+    display: none;
+}
+
+.keep-note-card {
+    width: 13rem;
+    min-height: 6rem;
+    outline: .2px solid var(--grey-color);
+    border-radius: 7px;
+    padding: 0 1rem 2rem .8rem;
+    cursor: pointer;
+    transition: box-shadow ease-in-out .3s;
+}
+
+.keep-note-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+}
+
+.keep-note-card--title, .keep-note-card--note {
+    margin: 1rem 0 0 0;
+    color: var(--text-note);
+}
+
+.keep-note-card--title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.keep-note-card--note {
+    font-size: 120%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+.app-create-note {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    outline: .3px solid var(--grey-color);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+    margin: 0 0 30px;
+}
+
+.app-create-note--note, .app-create-note--title {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    color: var(--grey-color);
+}
+
+
+.app-create-note--note {
+    font-size: 1rem;
+}
